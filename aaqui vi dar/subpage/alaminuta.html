@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" translate="no">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Language" content="pt-br">
+	<meta name="author" content="Jeffe bahns">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Description" content="conheça os melhores lanche da cidade e compartilhe momentos">
+	<meta name="Keywords" content="tele dog igrejinha lanche">
+	<link rel="icon" href="img/icon.ico" type="image/ico" sizes="126x126" />
+	<title>Ala Minuta // Tele Dog</title>
+	<link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+	
+<body>
+	
+	<!--CABEÇALHO DO SITE-->
+<header id="header">
+	<a href="index.html" title="CARDAPIO_TELE DOG" class="home">HOME</a>
+	<a href="cardápio/CARDÁPIO_TELE-DOG.pdf" target="_blank" class= "cardápio">CARDÁPIO</a>
+	<a href="link subpage/sobre.html" class="sobre" target="_blank">SOBRE</a>
+	<a href="index.html"><img src="img/logo.png" alt="logodog" width="571" class="logo"></a>
+    <a href="#dadoscontato" class="contato">CONTATO</a> 
+</header>
+
+<!--SECTION COM SETA ANCORA E IMAGEM PRINCIPAL-->
+<section>
+	<h2><img src="img/fundo-alagado.jpg" alt="img" class="imagemprincipalalacarne"></h2>
+	<a href="#apresentaçãoalacarne"><img src="img/seta-pra-baixo.png" alt="seta" class="setdown"></a>
+</section>
+
+<!--PARAGRÁFO APRESENTAÇÃO DAS PORÇÕES-->
+<div>
+	<p class="apresentaçãoalacarne" id="apresentaçãoalacarne">As ala minuta da tele dog, são feitas com extrema qualidade e sabor, Propocionando os nutrientes necessários para encarar o dia.</p>
+</div>
+
+<!--"BOTÃO" ALACARNE-->
+<span>
+	<a href="#cardapioalaminutas"><p id="escpedidoalagado"> ALAMINUTAS</p></a>
+</span>
+
+<!--IMAGEM DA ALAMINUTA DE CARNE-->
+<div>
+	<img src="img/ALAGADO.jpg" class="imgalagado" alt="imagem da alagado">
+</div>
+
+<div>
+	<p class="cardapioalaminutas" id="cardapioalaminutas">
+	  ALA MINUTA DE FRANGO . . . . . . . . <bdo>11,99</bdo><br>
+	  ALA MINUTA DE GADO . . . . . . . . . . <bdo>11,99</bdo><br>
+	</p>
+</div>
+
+<span>
+<p id="escpedidoformalaminuta"> ESCOLHA O SEU PEDIDO</p>
+</span>
+
+<!--FORMULÁRIO COM ENTRADAS DO PEDIDO DO CLIENTE-->
+<form action="#" method="post">
+
+<div>
+	<label class="alaminutafrango">ALA MINUTA DE FRANGO</label>
+	<input type="checkbox" id="alaminutafrango"  value="Frango">
+</div>
+
+<div>
+	<label class="alaminutagado">ALA MINUTA DE GADO</label>
+	<input type="checkbox" id="alaminutagado"  value="gado">
+</div>
+
+<div>
+	<label class="cityentalaminutas">ESCOLHA SUA CIDADE</label>
+	<select id="cidadesalaminutas" title="Escolha entre Três Coroas ou Igrejinha" required name="cidade">
+		<option value=""></option>
+ 		<option value="Igrejinha">IGREJINHA</option>
+		<option value="três coroas">TRÊS COROAS</option>
+	</select>
+</div>
+
+<div>
+	<label class="endereçoclientealaminutas">ENDEREÇO</label>
+	<input type="text" id="endereçodoclientealaminutas" name="endereço" placeholder="Informe sua rua, número da casa e referência se tiver." title="Um endereço bem informativo, agilizará a entrega." required maxlength="100" minlength="15">
+</div>
+
+<div>
+	<label class="celularclientealaminuta">CELULAR</label>
+	<input type="number" id="celulardoclientealaminuta" name="celular" title="EXEMPLO = 51 988776655" placeholder="(xx) x xxxxxxxx" required pattern="[0-9]" maxlength="12">
+</div>
+
+<div>
+	<label class="nomeclientealaminutas">SEU NOME</label>
+	<input type="text" id="nomedosclientealaminutas" placeholder=" Informe seu nome" required maxlength="35" minlength="3" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" title="* USAR APENAS LETRAS">
+</div>
+
+<div>
+	<input type="submit" id="envpedala" value="ENVIAR PEDIDO">
+</div>
+
+<div>
+	<input type="reset" id="resetpedala" value="LIMPAR">
+</div>
+
+</form>
+
+<div translate="no">
+	<p class="ditadoala" translate="no" >" Porque estou certo de que nem a morte, nem a vida, nem os anjos, nem os principados, nem as potestades, nem o presente, nem o porvir, nem a altura, nem a profundidade, nem alguma outra criatura nos poderá separar do amor de Deus, que está em Cristo Jesus, nosso Senhor! "</p>
+	<p id="provala">Romanos 8:38-39</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--RODAPÉ DO SITE COM INFORMAÇÕES REFERENTE A TELE DOG E SELOS DE FUNCIONALIDADES-->
+<footer>
+
+	<p class="timefunc">&nbsp;HORARÍO DE FUNCIONAMENTO</p>
+		<ul class="timesfunc">
+			<li >DE SEGUNDA A SEXTA</li>
+			<li>11:00 às 13:00 E  18:00 às 23:00</li>
+		</ul>
+		
+	<p class="localentr">TELE-ENTREGA&nbsp;</p>
+		<ul class="locaisentr">
+			<li>IGREJINHA</li>
+			<li>TRÊS COROAS</li>
+		</ul>
+		
+	<p class="formpay">PAGAMENTOS</p>
+		<ul class="meiopay">
+			<li> DINHEIRO</li>
+			<li><abbr class="abbrcard" title="ACEITAMOS CARTÕES : VISA, MASTERCARD, ELO, HIPERCARD, GOODCARD">CARTÕES</abbr></li>
+		</ul>
+		
+	<p class="dadoscontato" id="dadoscontato">CONTATO</p>
+		<a href=" http://api.whatsapp.com/send?1=pt_BR&phone=5551996403213" target="_blank"><img src="img/whatsapp-icone.png" class="iconwhats" alt="imagem icone do whatsapp"></a>
+		<a href="https://www.facebook.com/teledogigrejinha" target="_blank"><img src="img/facebook-icone.png" class="iconface" alt="imagem icone do facebook"></a>
+		<a href="https://www.instagram.com/tele_dog" target="_blank"><img src="img/instagran-icone.png" class="iconinsta" alt="imagem icone do instagram"></a>
+		<a href="https://www.youtube.com/channel/UC3AIknz26FNrUi4Covgq4WQ" target="_blank"><img src="img/youtube-icone.png" class="iconyoutube" alt="imagem icone do youtube"></a>
+		<a href="mailto:teledogigrejinha@gmail.com" target="_blank"><img src="img/gmail-icon.png" class="icongmail" alt="imagem icone do youtube"></a>
+		<p class="meioscontatoend">Endereço: R. Tiradentes, 77 - Centro,&nbsp; Igrejinha - RS</p>
+		<p class="meioscontatocel">FONE: 9 99512797
+	</p>
+	
+	<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11295.61233121006!2d-50.794818!3d-29.574251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6dd1fc3729c9746!2sTele%20Dog%20Igrejinha%20Lanches%20e%20Petiscos!5e1!3m2!1spt-BR!2sbr!4v1581481524688!5m2!1spt-BR!2sbr" allowfullscreen=""></iframe>
+</footer>	
+</body>
+</html>

@@ -1,0 +1,2107 @@
+@charset "utf-8";
+@font-face { 
+	font-family: mysecondfont;
+	src: url("../fonts/Bungee-Inline.otf") format("opentype");
+}
+@font-face {
+	font-family: myFirstFont;
+	src: url("../fonts/rosewood-regular.otf") format("opentype");
+}
+@font-face {
+font-family: mythirtfont;
+src: url("../fonts/bungee-shade.ttf") format("truetype");
+}
+@font-face {
+font-family: myquartafont;
+src: url("../fonts/bungee.ttf") format("opentype");
+}
+html {
+  scroll-behavior: smooth;
+}
+/*parametro corpo do site*/
+body {
+background: linear-gradient(to right, #FF4040, #FFFF48);
+}
+/*Parâmetro dos links contino no site*/
+a:link, a:visited, a:active, a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+bdo {
+color: #B71111;
+}
+::selection {
+  color: red;
+  background: yellow;
+}
+/*Parâmetros cabeçalho da pagina*/
+header{
+	position: absolute;
+	width: 100%;
+	height: 6.7vw;
+    top: 0%;
+	left: 0vw;
+    background: linear-gradient(to right, #FF0004, yellow);
+	font-family: myFirstFont;
+}
+/*parametros objetos contido no cabeçalho*/
+/*logo*/
+.logo {
+    position: absolute;
+    top: 0.4vw;
+    left: 37%;
+	right: 50%;
+    width: 27%;
+    transition: 0.5s;
+}
+.logo:hover {
+        transform: scale(1.1);
+}
+/*home*/
+.home {
+    font-size: 4.6vw;
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    width: 11.1%;
+	right: auto;
+    height: 80%;
+    transition: all 0.2s ease;
+    color: #000000;
+	opacity: 1;
+}
+.home:hover {
+	opacity: 0.6;
+}
+/*cardápio*/
+.cardápio {
+    font-size: 4.6vw;
+    position: absolute;
+	width: 20.9%;
+    top: 20%;
+    left: 14%;
+	right: auto;
+	height: 80%;
+	transition: all 0.2s ease;
+	color: #000000;
+	opacity: 1;
+}
+.cardápio:hover {
+	opacity: 0.6
+}
+/*sobre*/
+.sobre {
+    font-size: 4.6vw;
+    position: absolute;
+    width: 13.5%;
+	height: 80%;
+    top: 20%;
+    left: 66%;
+	right: auto;
+    transition: 0.2s ease;
+    color: #000000;
+	opacity: 1;
+}
+.sobre:hover {
+	opacity: 0.6;
+}
+.contato {
+    font-size: 4.6vw;
+    position: absolute;
+	width: 18.5%;
+    top: 20%;
+	height: 80%;
+    left: auto;
+	right: 1%;
+    transition: 0.2s;
+	color: #000000;
+	opacity: 1;
+}
+.contato:hover {
+	opacity: 0.6;
+}
+/*Parâmetros section*/
+.imagemprincipal {
+    position: absolute;
+    top: 6.7vw;
+    left: 0px;
+    width: 100%;
+}
+
+
+/*PAGINAS DAS PORÇÕES*/
+/*imagem principal das porções*/
+.imagemprincipalporções {
+    position: absolute;
+    top: 6.7vw;
+    left: 0px;
+    width: 100%;
+}
+	/*parâmetros da seta âncora posicionada na section*/
+.setdown {
+    position: absolute;
+    top: 40.8vw;
+    left: 88vw;
+    width: 6.5vw;
+    height: 5vw;
+    opacity: 1;
+    display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	animation-name: set-up, setdown;
+	animation-duration: 1.5s, 1s;
+	animation-delay: 0s, .3s;
+	animation-timing-function: ease-out, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	animation-fill-mode: both;
+	animation-direction: normal, alternate;
+}
+@keyframes
+setdown {
+	0% {
+    transform: translateY(-3px);
+	}
+	100% {
+    transform: translateY(6px);
+	}
+}
+/*PAGINA APRESENTAÇÃO DE PORÇÕES*/
+.apresentaçãoporções {
+	position: absolute;
+	width: 100%;
+	left: 0vw;
+	top: 47vw;
+	font-size: 3vw;
+	font-family: myquartafont;
+	text-align: center;
+	}
+.apresentaçãoporções::first-letter {
+  font-size: 4vw;
+}
+/*"botão" porção*/
+#escpedido {
+	position: absolute;
+	width: 29%;
+	top: 66vw;
+	left: 34.5vw;
+	height: 9vw;
+	background: #E53434;
+	font-size: 3.5vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*cardápio das porções*/
+.cardapioporções {
+	position: absolute;
+	top: 78vw;
+	font-family: mysecondfont;
+	font-size: 2.7vw;
+	color:#FFFC00;
+}
+/*imagem e video porções*/
+.imgporcert {
+	position: absolute;
+	top: 115vw;
+	left: 65vw;
+	width: 30.2vw;
+	height: vw;
+}
+.vidporções {
+	position: absolute;
+	top: 83vw;
+	left: 62.5vw;
+	width: 35.2vw;
+	border-style:groove;
+	border-color:#810000;
+	border-radius: 0.5vw;
+}
+.vidporções {
+	position: absolute;
+	top: 83vw;
+	left: 62.5vw;
+	width: 35.2vw;
+	border-style:groove;
+	border-color:#810000;
+	border-radius: 0.5vw;
+}
+/*"botão" escolha o seu pedido*/
+#escpedidoform {
+	position: absolute;
+	width: 50%;
+	top: 149vw;
+	left: 24.5vw;
+	height: 7vw;
+	background: #E53434;
+	font-size: 2.7vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*formularío de seleção e pedido das porções*/
+.fritasp {
+position: absolute;
+top: 163.056vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#fritasp {
+position: absolute;
+left: 0.5vw;
+top: 165.15vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.fritasm {
+position: absolute;
+top: 168.056vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#fritasm {
+position: absolute;
+left: 0.5vw;
+top: 170vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.fritasg {
+position: absolute;
+top: 173.056vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#fritasg {
+position: absolute;
+left: 0.5vw;
+top: 175vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.fritasgg {
+position: absolute;
+top: 178.056vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#fritasgg {
+position: absolute;
+left: 0.5vw;
+top: 180vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.polenta10 {
+position: absolute;
+top: 183vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#polenta10 {
+position: absolute;
+left: 0.5vw;
+top: 185vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.polenta20 {
+position: absolute;
+top: 188vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#polenta20 {
+position: absolute;
+left: 0.5vw;
+top: 190vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.aipim10 {
+position: absolute;
+top: 193vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#aipim10 {
+position: absolute;
+left: 0.5vw;
+top: 195vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.aipim20 {
+position: absolute;
+top: 198vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#aipim20 {
+position: absolute;
+left: 0.5vw;
+top: 200vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.anéis10 {
+position: absolute;
+top: 203vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#anéis10 {
+position: absolute;
+left: 0.5vw;
+top: 205vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.anéis20 {
+position: absolute;
+top: 208vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#anéis20 {
+position: absolute;
+left: 0.5vw;
+top: 210vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+/*formulario das porções*/
+.nomecliente {
+position: absolute;
+top: 163vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 64.7%;
+}
+#nomedoscliente {
+position: absolute;
+left: 65vw;
+top: 170vw;
+width: 11.5vw;
+height: 1.vw;
+font-size: 0.6vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.cityent {
+position: absolute;
+top: 173.5vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 56%;
+}
+#cidades {
+position: absolute;
+left: 65vw;
+top: 181vw;
+width: 11.5vw;
+height: 1.vw;
+font-size: 0.6vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.endereçocliente {
+position: absolute;
+top: 184vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 64%;
+}
+#endereçodocliente {
+position: absolute;
+left: 63vw;
+top: 191vw;
+width: 16.5vw;
+height: 1.vw;
+font-size: 0.4vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.celularcliente {
+position: absolute;
+top: 193vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 65%;
+}
+#celulardocliente {
+position: absolute;
+left: 63vw;
+top: 200vw;
+width: 16.5vw;
+height: 1.vw;
+font-size: 0.4vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+#envpedpor {
+	position: absolute;
+	top: 206.5vw;
+	left: 48vw;
+	width: 21vw;
+	height: 6vw;
+	font-size: 2vw;
+	background: #E53434;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+#resetpedpor {
+	position: absolute;
+	top: 206.5vw;
+	left: 74vw;
+	width: 21vw;
+	height: 6vw;
+	font-size: 2vw;
+	background: #E53434;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*proverbio do final da página*/
+.ditadoporção {
+position: absolute;
+top: 217vw;
+font-family: myquartafont;
+text-align: justify;
+color: #3B3B3B;
+width: 54%;
+font-size: 2.3vw;
+left: 23vw;
+}
+#prov1 {
+position: absolute;
+top: 244.5vw;
+font-family: myquartafont;
+text-align: justify;
+color: #6D6D6D;
+font-size: 2.2vw;
+left: 61vw;
+}
+/*informações horario de funcionamento, pagamentos e locais de entrega*/
+.timefunc {
+	position: absolute;
+	width: 42%;
+	left: 0vw;
+	top: 252vw;
+	font-size: 2.4vw;
+	font-family:mysecondfont;
+	background:#E83F00;
+	height: 20vw;
+	text-decoration-line: underline;
+}
+.timesfunc{
+	position: absolute;
+	width: 33.1%;
+	right: 61.5vw;
+	top: 258.4vw;
+	font-size: 1.9vw;
+	font-family:myquartafont;
+}
+.formpay{
+	position: absolute;
+	width: 30%;
+	right:29vw;
+	top: 252vw;
+	font-size: 2.4vw;
+	font-family:mysecondfont;
+	background:#E83F00;
+	height: 20vw;
+	text-align: center;
+	text-decoration-line: underline;
+}
+.meiopay {
+	position: absolute;
+	width: 20.5%;
+	right: 27.6vw;
+	top: 258.4vw;
+	font-size: 1.9vw;
+	font-family:myquartafont;
+}
+.abbrcard {
+	text-decoration:none;
+}
+.localentr {
+	position: absolute;
+	width: 30%;
+	right:0vw;
+	top: 252vw;
+	font-size: 2.4vw;
+	font-family:mysecondfont;
+	background:#E83F00;
+	height: 20vw;
+	text-align: center;
+	text-decoration-line: underline;
+}
+.locaisentr {
+	position: absolute;
+	width: 20.5%;
+	right: 0vw;
+	top: 258.4vw;
+	font-size: 1.9vw;
+	font-family:myquartafont;
+}
+/*informações de contato tele dog*/
+.dadoscontato {
+	position: absolute;
+	width: 100%;
+	left: 0vw;
+	top: 269.5vw;
+	font-size: 4vw;
+	font-family:mysecondfont;
+	background:#E83F00;
+	text-align: center;
+	height: 43vw;
+	text-decoration-line: underline;
+}
+.meioscontatoend {
+	position: absolute;
+	width: 89.9%;
+	left: 8vw;
+	top: 277.6vw;
+	font-size: 2.85vw;
+	font-family:mysecondfont;
+}
+.meioscontatocel {
+	position: absolute;
+	width: 89.9%;
+	left: 8vw;
+	top: 281vw;
+	font-size: 2.85vw;
+	font-family:mysecondfont;
+}
+.iconwhats {
+	position: absolute;
+	width: 5.5%;
+	left: 0.2vw;
+	top: 283vw;
+	}
+.iconface {
+	position: absolute;
+	width: 5.5%;
+	left: 0.2vw;
+	top: 290vw;
+}
+.iconinsta {
+	position: absolute;
+	width: 6.3%;
+	left: -0.5vw;
+	top: 297vw;
+}
+.iconyoutube {
+	position: absolute;
+	width: 5.5%;
+	left: 0.3vw;
+	top: 304.2vw;
+}
+.icongmail{
+	position: absolute;
+	width: 6.4%;
+	left: 0vw;
+	top: 310.2vw;
+}
+.maps {
+	position: absolute;
+	top: 290vw;
+	width: 91.4vw;
+	left: 6.5vw;
+	height: 25.25vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PARAMETROS DA PAGINA ALAMINUTA DE CARNE
+
+/*Parâmetros section*/
+.imagemprincipalalacarne {
+    position: absolute;
+    top: 6.7vw;
+    left: 0px;
+    width: 100%;
+}
+/*PAGINA APRESENTAÇÃO DA ALA MINUTA*/
+.apresentaçãoalacarne {
+	position: absolute;
+	width: 100%;
+	left: 0vw;
+	top: 47vw;
+	font-size: 3vw;
+	font-family: myquartafont;
+	text-align: center;
+	}
+.apresentaçãoalacarne::first-letter {
+  font-size: 4vw;
+}
+/*"botão" alaminuta;*/
+#escpedidoalagado {
+	position: absolute;
+	width: 43%;
+	top: 76.5vw;
+	left: 28.7vw;
+	height: 9vw;
+	background: #E53434;
+	font-size: 3.5vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*imagem ao lado do cardapio e o cardapio*/
+.imgalagado {
+	position: absolute;
+	top: 93vw;
+	left: 57.7vw;
+	width: 40vw;
+	height: 22vw;
+	border-style:groove;
+	border-color:#909090;
+	border-radius: 0.5vw;
+}
+.cardapioalaminutas {
+	position: absolute;
+	top: 88.2vw;
+	font-family: mysecondfont;
+	font-size: 2.7vw;
+	color:#FFFC00;
+	}
+/*"botão" escolha seu pedido*/
+	#escpedidoformalaminuta {
+	position: absolute;
+	width: 50%;
+	top: 118vw;
+	left: 24.5vw;
+	height: 7vw;
+	background: #E53434;
+	font-size: 2.7vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*formulario pra pedir a alaminuta*/
+.alaminutafrango {
+position: absolute;
+top: 131vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#alaminutafrango {
+position: absolute;
+left: 0.5vw;
+top: 133.3vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.alaminutagado {
+position: absolute;
+top: 138vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#alaminutagado {
+position: absolute;
+left: 0.5vw;
+top: 140.3vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.nomeclientealaminutas {
+position: absolute;
+top: 131vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 64.7%;
+}
+#nomedosclientealaminutas {
+position: absolute;
+left: 65vw;
+top: 137.5vw;
+width: 11.5vw;
+height: 1.vw;
+font-size: 0.6vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.cityentalaminutas {
+position: absolute;
+top: 140.5vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 56%;
+}
+#cidadesalaminutas {
+position: absolute;
+left: 65vw;
+top: 147vw;
+width: 11.5vw;
+height: 1.vw;
+font-size: 0.6vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.endereçoclientealaminutas {
+position: absolute;
+top: 150vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 64%;
+}
+#endereçodoclientealaminutas {
+position: absolute;
+left: 63vw;
+top: 156.2vw;
+width: 16.5vw;
+height: 1.vw;
+font-size: 0.4vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.celularclientealaminuta {
+position: absolute;
+top: 159.8vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 65%;
+}
+#celulardoclientealaminuta {
+position: absolute;
+left: 63vw;
+top: 166vw;
+width: 16.5vw;
+height: 1.vw;
+font-size: 0.4vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+#envpedala {
+position: absolute;
+	top: 170.5vw;
+	left: 48vw;
+	width: 21vw;
+	height: 6vw;
+	font-size: 2vw;
+	background: #E53434;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+#resetpedala {
+	position: absolute;
+	top: 170.5vw;
+	left: 74vw;
+	width: 21vw;
+	height: 6vw;
+	font-size: 2vw;
+	background: #E53434;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*proverbio da pagina ala minuta*/
+.ditadoala {
+position: absolute;
+top: 182vw;
+font-family: myquartafont;
+text-align: justify;
+color: #3B3B3B;
+width: 59%;
+font-size: 2.7vw;
+left: 20vw;
+}
+#provala {
+position: absolute;
+top: 242vw;
+font-family: myquartafont;
+text-align: justify;
+color: #6D6D6D;
+font-size: 2.6vw;
+left: 61vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PAGINA SOBRE*/
+/*imagem principal da pagina sobre*/
+.imgsobre {
+position: absolute;
+border: 1px solid #000000;
+border-radius: 50%;
+width: 28vw;
+top: 10vw;
+}
+.textsobre {
+position: absolute;
+top: 7vw;
+text-align: justify;
+width: 72vw;
+left: 26vw;
+font-family: mysecondfont;
+font-size: 2vw;
+}
+.textsobre::first-letter {
+  font-size: 3vw;
+}
+/*comentarios de clientes da tele dog*/
+.comentario {
+position: absolute;
+top: 40vw;
+font-family: mythirtfont;
+font-size: 3vw;
+left: 23.5vw;
+border-bottom: 2px groove #000000;
+height: 5.5vw;
+}
+.comentario1 {
+position:absolute;
+top: 50vw;
+font-family: myquartafont;
+font-size: 1.65vw;
+width: 41.5vw;
+left: 1vw;
+color: #1B5C05;
+border: 2px groove#0CDD09;
+padding: 1vw;
+}
+.comentario2 {
+position:absolute;
+top: 50vw;
+font-family: myquartafont;
+font-size: 1.65vw;
+width: 46vw;
+text-align: justify;
+left: 50vw;
+color: #1B5C05;
+border: 2px groove#0CDD09;
+padding: 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PAGINA DA CAIXA*/
+
+/*Parâmetros section*/
+.imagemprincipalcaixa {
+    position: absolute;
+    top: 6.7vw;
+    left: 0px;
+    width: 100%;
+}
+/*PAGINA APRESENTAÇÃO DE CAIXAS*/
+.apresentaçãocaixas {
+	position: absolute;
+	width: 100%;
+	left: 0vw;
+	top: 47vw;
+	font-size: 3vw;
+	font-family: myquartafont;
+	text-align: center;
+	}
+.apresentaçãocaixas::first-letter {
+  font-size: 4vw;
+  }
+  /*"botão" escolha seu pedido*/
+  #escpedidocaixa {
+	position: absolute;
+	width: 60%;
+	top: 67.5vw;
+	left: 19vw;
+	height: 7.5vw;
+	background: #E53434;
+	font-size: 3vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*cardápio das caixas*/
+.cardapiocaixas {
+	position: absolute;
+	top: 78vw;
+	font-family: mysecondfont;
+	font-size: 2.7vw;
+	color:#FFFC00;
+}
+/*video  da caixa*/
+.vidcaixa {
+	position: absolute;
+	top: 82.5vw;
+	right: 0.1vw;
+	width: 35.2vw;
+	border-style:groove;
+	border-color:#810000;
+	border-radius: 0.5vw;
+}
+/*certificado embaixo do video*/
+.certcaixa {
+	position: absolute;
+	top: 108.7vw;
+	height: 4vw;
+	left: 63.2vw;
+	width: 35.2vw;
+}
+/*ingredientes da caixa 1*/
+.ingr1 {
+position: absolute;
+top: 111vw;
+font-family: mysecondfont;
+font-size: 2vw;
+color:#FFFC00;
+}
+  /*"botão" escolha seu pedido caixa2*/
+  #escpedidocaixas2 {
+	position: absolute;
+	width: 60%;
+	top: 120vw;
+	left: 19vw;
+	height: 7.5vw;
+	background: #E53434;
+	font-size: 3vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+.cardapiocaixas2 {
+	position: absolute;
+	top: 130vw;
+	font-family: mysecondfont;
+	font-size: 2.7vw;
+	color:#FFFC00;
+}
+/*video  da caixa2*/
+.vidcaixa2 {
+	position: absolute;
+	top: 135vw;
+	right: 0.1vw;
+	width: 35.2vw;
+	border-style:groove;
+	border-color:#810000;
+	border-radius: 0.5vw;
+}
+/*certificado embaixo do video*/
+.certcaixa2 {
+	position: absolute;
+	top: 161.2vw;
+	height: 4vw;
+	left: 63.2vw;
+	width: 35.2vw;
+}
+/*ingredientes da caixa 2*/
+.ingr2 {
+position: absolute;
+top: 163vw;
+font-family: mysecondfont;
+font-size: 1.9vw;
+color:#FFFC00;
+}
+
+/*"botão" escolha seu pedido caixa3*/
+  #escpedidocaixas3 {
+	position: absolute;
+	width: 60%;
+	top: 171vw;
+	left: 19vw;
+	height: 7.5vw;
+	background: #E53434;
+	font-size: 3vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+.cardapiocaixas3 {
+	position: absolute;
+	top: 181vw;
+	font-family: mysecondfont;
+	font-size: 2.7vw;
+	color:#FFFC00;
+}
+/*video  da caixa3*/
+.vidcaixa3 {
+	position: absolute;
+	top: 186vw;
+	right: 0.1vw;
+	width: 35.2vw;
+	border-style:groove;
+	border-color:#810000;
+	border-radius: 0.5vw;
+}
+/*certificado embaixo do video*/
+.certcaixa3 {
+	position: absolute;
+	top: 212.2vw;
+	height: 4vw;
+	left: 63.2vw;
+	width: 35.2vw;
+}
+/*ingredientes da caixa 3*/
+.ingr3 {
+position: absolute;
+top: 214.5vw;
+font-family: mysecondfont;
+font-size: 2vw;
+color:#FFFC00;
+}
+
+/*"botão" escolha seu pedido caixa4*/
+  #escpedidocaixas4 {
+	position: absolute;
+	width: 60%;
+	top: 227vw;
+	left: 19vw;
+	height: 7.5vw;
+	background: #E53434;
+	font-size: 3vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*FORMULARIO DA PAGINA DAS CAIXAS*/
+
+.cardapiocaixas4 {
+	position: absolute;
+	top: 237.5vw;
+	font-family: mysecondfont;
+	font-size: 2.7vw;
+	color:#FFFC00;
+}
+/*video  da caixa4*/
+.vidcaixa4 {
+	position: absolute;
+	top: 242.5vw;
+	right: 0.1vw;
+	width: 35.2vw;
+	border-style:groove;
+	border-color:#810000;
+	border-radius: 0.5vw;
+}
+/*certificado embaixo do video*/
+.certcaixa4 {
+	position: absolute;
+	top: 268.6vw;
+	height: 4vw;
+	left: 63.2vw;
+	width: 35.2vw;
+}
+/*ingredientes da caixa 3*/
+.ingr4 {
+position: absolute;
+top: 270.2vw;
+font-family: mysecondfont;
+font-size: 2vw;
+color:#FFFC00;
+}
+
+/*"botão" escolha seu pedido caixa5*/
+  #escpedidocaixas5 {
+	position: absolute;
+	width: 60%;
+	top: 282vw;
+	left: 19vw;
+	height: 7.5vw;
+	background: #E53434;
+	font-size: 3vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+.cardapiocaixas5 {
+	position: absolute;
+	top: 292.5vw;
+	font-family: mysecondfont;
+	font-size: 2.7vw;
+	color:#FFFC00;
+}
+/*video  da caixa4*/
+.vidcaixa5 {
+	position: absolute;
+	top: 297.5vw;
+	right: 0.1vw;
+	width: 35.2vw;
+	border-style:groove;
+	border-color:#810000;
+	border-radius: 0.5vw;
+}
+/*certificado embaixo do video*/
+.certcaixa5 {
+	position: absolute;
+	top: 323.7vw;
+	height: 4vw;
+	left: 63.2vw;
+	width: 35.2vw;
+}
+/*ingredientes da caixa 5*/
+.ingr5 {
+position: absolute;
+top: 325.2vw;
+font-family: mysecondfont;
+font-size: 2vw;
+color:#FFFC00;
+}
+/*FORMULARIO DAS CAIXAS*/
+/*"botão" escolha o seu pedido*/
+#escpedidoformcaixas {
+	position: absolute;
+	width: 50%;
+	top: 338vw;
+	left: 24.5vw;
+	height: 7vw;
+	background: #E53434;
+	font-size: 2.7vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*formulario das caixas*/
+.nomecliente2 {
+position: absolute;
+top: 350vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 64.7%;
+}
+#nomedoscliente2 {
+position: absolute;
+left: 65vw;
+top: 356vw;
+width: 11.5vw;
+height: 1.vw;
+font-size: 0.6vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.cityent2 {
+position: absolute;
+top: 359vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 56%;
+}
+#cidades2 {
+position: absolute;
+left: 65vw;
+top: 365vw;
+width: 11.5vw;
+height: 1.vw;
+font-size: 0.6vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.endereçocliente2 {
+position: absolute;
+top: 368vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 64%;
+}
+#endereçodocliente2 {
+position: absolute;
+left: 63vw;
+top: 374vw;
+width: 16.5vw;
+height: 1.vw;
+font-size: 0.4vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.celularcliente2 {
+position: absolute;
+top: 377vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 65%;
+}
+#celulardocliente2 {
+position: absolute;
+left: 63vw;
+top: 383vw;
+width: 16.5vw;
+height: 1.vw;
+font-size: 0.4vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+#envpedcai {
+	position: absolute;
+	top: 388.5vw;
+	left: 48vw;
+	width: 21vw;
+	height: 6vw;
+	font-size: 2vw;
+	background: #E53434;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+#resetpedcai {
+	position: absolute;
+	top: 388.5vw;
+	left: 74vw;
+	width: 21vw;
+	height: 6vw;
+	font-size: 2vw;
+	background: #E53434;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+#selectcaixa {
+position: absolute;
+left: 3%;
+top: 357vw;
+width: 35vw;
+height: 3vw;
+font-size: 1.25vw;
+font-family: myquartafont;
+border: 1.45px solid #252121;
+}
+.selectcaixa {
+position: absolute;
+top: 350vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 5%
+}
+.ditadocaixa {
+position: absolute;
+top: 396vw;
+font-family: myquartafont;
+text-align: justify;
+color: #3B3B3B;
+width: 55%;
+font-size: 2.3vw;
+left: 20vw;
+}
+#prov2 {
+position: absolute;
+top: 419vw;
+font-family: myquartafont;
+text-align: justify;
+color: #6D6D6D;
+font-size: 2.2vw;
+left: 58vw;
+}
+/*informações horario de funcionamento, pagamentos e locais de entrega*/
+.timefunc2 {
+	position: absolute;
+	width: 42%;
+	left: 0vw;
+	top: 428vw;
+	font-size: 2.4vw;
+	font-family:mysecondfont;
+	background:#E83F00;
+	height: 20vw;
+	text-decoration-line: underline;
+}
+.timesfunc2 {
+	position: absolute;
+	width: 33.1%;
+	right: 61.5vw;
+	top: 434vw;
+	font-size: 1.9vw;
+	font-family:myquartafont;
+}
+.formpay2 {
+	position: absolute;
+	width: 30%;
+	right:29vw;
+	top: 428vw;
+	font-size: 2.4vw;
+	font-family:mysecondfont;
+	background:#E83F00;
+	height: 20vw;
+	text-align: center;
+	text-decoration-line: underline;
+}
+.meiopay2 {
+	position: absolute;
+	width: 20.5%;
+	right: 27.6vw;
+	top: 434vw;
+	font-size: 1.9vw;
+	font-family:myquartafont;
+}
+.abbrcard {
+	text-decoration:none;
+}
+.localentr2 {
+	position: absolute;
+	width: 30%;
+	right:0vw;
+	top: 428vw;
+	font-size: 2.4vw;
+	font-family:mysecondfont;
+	background:#E83F00;
+	height: 20vw;
+	text-align: center;
+	text-decoration-line: underline;
+}
+.locaisentr2 {
+	position: absolute;
+	width: 20.5%;
+	right: 0vw;
+	top: 434vw;
+	font-size: 1.9vw;
+	font-family:myquartafont;
+}
+
+/*informações de contato tele dog*/
+.dadoscontato2 {
+	position: absolute;
+	width: 100%;
+	left: 0vw;
+	top: 444vw;
+	font-size: 4vw;
+	font-family:mysecondfont;
+	background:#E83F00;
+	text-align: center;
+	height: 41vw;
+	text-decoration-line: underline;
+}
+.meioscontatoend2 {
+	position: absolute;
+	width: 89.9%;
+	left: 8vw;
+	top: 452.6vw;
+	font-size: 2.85vw;
+	font-family:mysecondfont;
+}
+.meioscontatocel2 {
+	position: absolute;
+	width: 89.9%;
+	left: 8vw;
+	top: 457vw;
+	font-size: 2.85vw;
+	font-family:mysecondfont;
+}
+.iconwhats2 {
+	position: absolute;
+	width: 5.5%;
+	left: 0.2vw;
+	top: 458vw;
+	}
+.iconface2 {
+	position: absolute;
+	width: 5.5%;
+	left: 0.2vw;
+	top: 464.5vw;
+}
+.iconinsta2 {
+	position: absolute;
+	width: 6.3%;
+	left: -0.5vw;
+	top: 471vw;
+}
+.iconyoutube2 {
+	position: absolute;
+	width: 5.5%;
+	left: 0.3vw;
+	top: 477.5vw;
+}
+.icongmail2{
+	position: absolute;
+	width: 6.4%;
+	left: 0vw;
+	top: 483vw;
+}
+.maps2 {
+	position: absolute;
+	top: 466vw;
+	width: 91.4vw;
+	left: 6.5vw;
+	height: 22vw;
+}
+
+/*PAGINA PETISCO*/
+.imagemprincipalpetisco {
+    position: absolute;
+    top: 6.7vw;
+    left: 0px;
+    width: 100%;
+}
+/*PAGINA APRESENTAÇÃO DE PETISCO*/
+.apresentaçãopetisco {
+	position: absolute;
+	width: 100%;
+	left: 0vw;
+	top: 47vw;
+	font-size: 3vw;
+	font-family: myquartafont;
+	text-align: center;
+	}
+.apresentaçãopetisco::first-letter {
+  font-size: 4vw;
+}
+/*"botão" petisco*/
+#escpedidopetisco {
+	position: absolute;
+	width: 37%;
+	top: 66vw;
+	left: 33vw;
+	height: 9vw;
+	background: #E53434;
+	font-size: 3.5vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*cardápio das petisco*/
+.cardapiopetisco {
+	position: absolute;
+	top: 78vw;
+	font-family: mysecondfont;
+	font-size: 2.7vw;
+	color:#FFFC00;
+}
+/*video petisco*/
+
+.vidpet {
+	position: absolute;
+	top: 81.5vw;
+	left: 62.5vw;
+	width: 35.2vw;
+	border-style:groove;
+	border-color:#810000;
+	border-radius: 0.5vw;
+}
+.ingrpetisco {
+position: absolute;
+top: 105vw;
+font-family: mysecondfont;
+font-size: 1.9vw;
+color:#FFFC00;
+}
+/*"botão" escolha o seu pedido*/
+#escpedidoformpetisco {
+	position: absolute;
+	width: 50%;
+	top: 112vw;
+	left: 24.5vw;
+	height: 7vw;
+	background: #E53434;
+	font-size: 2.7vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+.fritascomtudo {
+position: absolute;
+top: 124vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#fritascomtudo {
+position: absolute;
+left: 0.5vw;
+top: 126.15vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+/*formularío de seleção e pedido das petiscos*/
+.nomecliente3 {
+position: absolute;
+top: 124vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 64.7%;
+}
+#nomedoscliente3 {
+position: absolute;
+left: 65vw;
+top: 130vw;
+width: 11.5vw;
+height: 1.vw;
+font-size: 0.6vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+/*formulario das petiscos*/
+.cityent3 {
+position: absolute;
+top: 134vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 56%;
+}
+#cidades3 {
+position: absolute;
+left: 65vw;
+top: 140vw;
+width: 11.5vw;
+height: 1.vw;
+font-size: 0.6vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.endereçocliente3 {
+position: absolute;
+top: 144vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 64%;
+}
+#endereçodocliente3 {
+position: absolute;
+left: 63vw;
+top: 150vw;
+width: 16.5vw;
+height: 1.vw;
+font-size: 0.4vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.celularcliente3 {
+position: absolute;
+top: 154vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 65%;
+}
+#celulardocliente3 {
+position: absolute;
+left: 63vw;
+top: 160vw;
+width: 16.5vw;
+height: 1.vw;
+font-size: 0.4vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+#envpedpet {
+	position: absolute;
+	top: 164.5vw;
+	left: 48vw;
+	width: 21vw;
+	height: 6vw;
+	font-size: 2vw;
+	background: #E53434;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+#resetpedpet {
+	position: absolute;
+	top: 164.5vw;
+	left: 74vw;
+	width: 21vw;
+	height: 6vw;
+	font-size: 2vw;
+	background: #E53434;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*proverbio do final da página*/
+.ditadopet {
+position: absolute;
+top: 174vw;
+font-family: myquartafont;
+text-align: justify;
+color: #3B3B3B;
+width: 56%;
+font-size: 2.69vw;
+left: 22vw;
+}
+#prov3 {
+position: absolute;
+top: 235vw;
+font-family: myquartafont;
+text-align: justify;
+color: #6D6D6D;
+font-size: 2.55vw;
+left: 61vw;
+}
+
+/*PAGINA DOS COMBOS*/
+/*imagem principal das porções*/
+.imagemprincipalcombo {
+    position: absolute;
+    top: 6.7vw;
+    left: 0px;
+    width: 100%;
+}
+	/*parâmetros da seta âncora posicionada na section*/
+.setdown {
+    position: absolute;
+    top: 40.8vw;
+    left: 88vw;
+    width: 6.5vw;
+    height: 5vw;
+    opacity: 1;
+    display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	animation-name: set-up, setdown;
+	animation-duration: 1.5s, 1s;
+	animation-delay: 0s, .3s;
+	animation-timing-function: ease-out, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	animation-fill-mode: both;
+	animation-direction: normal, alternate;
+}
+@keyframes
+setdown {
+	0% {
+    transform: translateY(-3px);
+	}
+	100% {
+    transform: translateY(6px);
+	}
+}
+/*PAGINA APRESENTAÇÃO DE PORÇÕES*/
+.apresentaçãocombo {
+	position: absolute;
+	width: 100%;
+	left: 0vw;
+	top: 47vw;
+	font-size: 3vw;
+	font-family: myquartafont;
+	text-align: center;
+	}
+.apresentaçãocombo::first-letter {
+  font-size: 4vw;
+}
+/*"botão" combo*/
+#escpedidocombo {
+	position: absolute;
+	width: 29%;
+	top: 66vw;
+	left: 34.5vw;
+	height: 9vw;
+	background: #E53434;
+	font-size: 3.5vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*cardápio das combo*/
+.cardapiocombo {
+	position: absolute;
+	top: 78vw;
+	font-family: mysecondfont;
+	font-size: 2.7vw;
+	color:#FFFC00;
+}
+/*ingredientes dos combo*/
+.ingrA {
+position: absolute;
+top: 83vw;
+font-family: mysecondfont;
+font-size: 1.37vw;
+color:#FFFC00;
+}
+.ingrB {
+position: absolute;
+top: 90vw;
+font-family: mysecondfont;
+font-size: 1.37vw;
+color:#FFFC00;
+}
+.ingrC {
+position: absolute;
+top: 96.8vw;
+font-family: mysecondfont;
+font-size: 1.37vw;
+color:#FFFC00;
+}
+.ingrD {
+position: absolute;
+top: 103.7vw;
+font-family: mysecondfont;
+font-size: 1.37vw;
+color:#FFFC00;
+}
+.ingrE {
+position: absolute;
+top: 110.5vw;
+font-family: mysecondfont;
+font-size: 1.37vw;
+color:#FFFC00;
+}
+.ingrF {
+position: absolute;
+top: 117.4vw;
+font-family: mysecondfont;
+font-size: 1.37vw;
+color:#FFFC00;
+}
+/*imagem e video ao lado do cardapio (combo)*/
+.vidcombo {
+	position: absolute;
+	top: 83vw;
+	left: 62.5vw;
+	width: 35.2vw;
+	border-style:groove;
+	border-color:#810000;
+	border-radius: 0.5vw;
+}
+/*"botão" escolha o seu pedido*/
+#escpedidoformcombo {
+	position: absolute;
+	width: 50%;
+	top: 122.5vw;
+	left: 24.5vw;
+	height: 7vw;
+	background: #E53434;
+	font-size: 2.7vw;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*formularío de seleção e pedido das combo*/
+.formcombo1 {
+position: absolute;
+top: 135.056vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#formcombo1 {
+position: absolute;
+left: 0.5vw;
+top: 137.4vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.formcombo2 {
+position: absolute;
+top: 140.056vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#formcombo2 {
+position: absolute;
+left: 0.5vw;
+top: 142.3vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.formcombo3 {
+position: absolute;
+top: 145vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#formcombo3 {
+position: absolute;
+left: 0.5vw;
+top: 147.2vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.formcombo4 {
+position: absolute;
+top: 150vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#formcombo4 {
+position: absolute;
+left: 0.5vw;
+top: 152.2vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.formcombo5 {
+position: absolute;
+top: 155vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#formcombo5 {
+position: absolute;
+left: 0.5vw;
+top: 157.2vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+.formcombo6 {
+position: absolute;
+top: 160vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 3.5%;
+}
+#formcombo6 {
+position: absolute;
+left: 0.5vw;
+top: 162.2vw;
+width: 1.36vw;
+height: 2vw;
+transform: scale(2)
+}
+/*formulario dos combos*/
+.nomeclientecombo {
+position: absolute;
+top: 135.15vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 64.7%;
+}
+#nomedosclientecombo {
+position: absolute;
+left: 65vw;
+top: 141.5vw;
+width: 11.5vw;
+height: 1.vw;
+font-size: 0.6vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.cityentcombo {
+position: absolute;
+top: 144.5vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 56%;
+}
+#cidadescombo {
+position: absolute;
+left: 65vw;
+top: 151vw;
+width: 11.5vw;
+height: 1.vw;
+font-size: 0.6vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.endereçoclientecombo {
+position: absolute;
+top: 154vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 64%;
+}
+#endereçodoclientecombo {
+position: absolute;
+left: 63vw;
+top: 160vw;
+width: 16.5vw;
+height: 1.vw;
+font-size: 0.4vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+.celularclientecombo {
+position: absolute;
+top: 162vw;
+font-family: mysecondfont;
+font-size: 2.7vw;
+left: 65%;
+}
+#celulardoclientecombo {
+position: absolute;
+left: 63vw;
+top: 168vw;
+width: 16.5vw;
+height: 1.vw;
+font-size: 0.4vw;
+font-family: myquartafont;
+transform: scale(2);
+border: 1.45px solid #252121;
+}
+#envpedcom {
+	position: absolute;
+	top: 173.5vw;
+	left: 48vw;
+	width: 21vw;
+	height: 6vw;
+	font-size: 2vw;
+	background: #E53434;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+#resetpedcom {
+	position: absolute;
+	top: 173.5vw;
+	left: 74vw;
+	width: 21vw;
+	height: 6vw;
+	font-size: 2vw;
+	background: #E53434;
+	color: ghostwhite;
+	font-family:mysecondfont;
+	text-align: center;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 2vw;
+}
+/*proverbio do final da página*/
+.ditadocombo {
+position: absolute;
+top: 188vw;
+font-family: myquartafont;
+text-align: justify;
+color: #3B3B3B;
+width: 50%;
+font-size: 2.85vw;
+left: 23vw;
+}
+#provcom {
+position: absolute;
+top: 230vw;
+font-family: myquartafont;
+text-align: justify;
+color: #6D6D6D;
+font-size: 2.7vw;
+left: 61vw;
+}

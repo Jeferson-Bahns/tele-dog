@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" translate="no">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Language" content="pt-br">
+	<meta name="author" content="Jeffe bahns">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Description" content="conheça os melhores lanche da cidade e compartilhe momentos">
+	<meta name="Keywords" content="tele dog igrejinha lanche">
+	<link rel="icon" href="img/icon.ico" type="image/ico" sizes="126x126" />
+	<title>Porções // Tele Dog</title>
+	<link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+	
+<body>
+
+<!--CABEÇALHO DO SITE-->
+<header id="header">
+	<a href="../index.html" title="CARDAPIO_TELE DOG" class="home">HOME</a>
+	<a href="cardápio/CARDÁPIO_TELE-DOG.pdf" target="_blank" class= "cardápio">CARDÁPIO</a>
+	<a href="sobre.html" class="sobre" target="_blank">SOBRE</a>
+	<img src="img/logo.png" alt="logodog" width="571" class="logo">
+    <a href="#dadoscontato" class="contato">CONTATO</a> 
+</header>
+
+<!--SECTION COM SETA ANCORA E IMAGEM PRINCIPAL-->
+<section>
+	<h2><img src="img/fundo-porções.jpg" alt="img" class="imagemprincipalporções"></h2>
+	<a href="#apresentaçãoporções"><img src="img/seta-pra-baixo.png" alt="seta" class="setdown"></a>
+</section>
+
+<!--PARAGRÁFO APRESENTAÇÃO DAS PORÇÕES-->
+<div>
+	<p class="apresentaçãoporções" id="apresentaçãoporções">As porções da Tele Dog são irresistíveis, saborosas, praticas e rápidas. <i>DÊ aquele 'up' no seu lanche.</i></p>
+</div>
+
+<!--"BOTÃO" PORÇÕES-->
+<span>
+	<a href="#cardapioporções"><p id="escpedido"> PORÇÕES</p></a>
+</span>
+
+<!--CARDÁPIO DAS PORÇÕES-->
+<div>
+	<p class="cardapioporções" id="cardapioporções">
+		BATATA FRITA P. . . . . . . . . . . . . . . . . . . <bdo>6,99</bdo><br>
+		BATATA FRITA M. . . . . . . . . . . . . . . . . .<bdo>10,99</bdo><br>
+		BATATA FRITA G. . . . . . . . . . . . . . . . . . <bdo>13,99</bdo><br>
+		BATATA FRITA GG . . . . . . . . . . . . . . . . .<bdo>22,99</bdo><br>
+		POLENTA 10 UND. . . . . . . . . . . . . . . . . . .<bdo>9,99</bdo><br>
+		POLENTA 20 UND. . . . . . . . . . . . . . . . . .<bdo>16,99</bdo><br>
+		AIPIM FRITO 10 UND. . . . . . . . . . . . . . . <bdo>9,99</bdo><br>
+		AIPIM FRITO 20 UND. . . . . . . . . . . . . . <bdo>16,99</bdo><br>
+		ANÉIS DE CEBOLA 10 UND. . . . . . . . . . . <bdo>9,99</bdo><br>
+		ANÉIS DE CEBOLA 20 UND . . . . . . . . . .<bdo>16,99</bdo><br>
+	</p>
+</div>
+
+<!--VIDEO E IMAGEM PORÇÕES (AO LADO DO CARDÁPIO)-->
+<div>
+	<img src="img/Selo-de-qualidade.png" class="imgporcert" alt="imagem certificado das porções"> 
+	<video class="vidporções" controls>
+	<source src="video/videocaixa.mp4" type="video/mp4">
+	</video>
+</div>
+
+<!--"BOTÃO" ESCOLHA SEU PEDIDO-->
+<span>
+	<p id="escpedidoform"> ESCOLHA O SEU PEDIDO</p>
+</span>
+
+<!--FORMULÁRIO COM ENTRADAS DO PEDIDO DO CLIENTE-->
+<form action="#" method="post">
+
+<div>
+	<label class="fritasp">BATATA FRITA P</label>
+	<input type="checkbox" id="fritasp"  value="P">
+</div>
+
+<div>
+	<label class="fritasm">BATATA FRITA M</label>
+	<input type="checkbox" id="fritasm"  value="P">
+</div>
+
+<div>
+	<label class="fritasg">BATATA FRITA G</label>
+	<input type="checkbox" id="fritasg"  value="G">
+</div>
+
+<div>
+	<label class="fritasgg">BATATA FRITA GG</label>
+	<input type="checkbox" id="fritasgg"  value="GG">
+</div>
+
+<div>
+	<label class="polenta10">POLENTA 10 UND</label>
+	<input type="checkbox" id="polenta10"  value="10">
+</div>
+
+<div>
+	<label class="polenta20">POLENTA 20 UND</label>
+	<input type="checkbox" id="polenta20"  value="20">
+</div>
+
+<div>
+	<label class="aipim10">AIPIM 10 UND</label>
+	<input type="checkbox" id="aipim10"  value="10">
+</div>
+
+<div>
+	<label class="aipim20">AIPIM 20 UND</label>
+	<input type="checkbox" id="aipim20"  value="20">
+</div>
+
+<div>
+	<label class="anéis10">ANÉIS DE CEBOLA 10 UND</label>
+	<input type="checkbox" id="anéis10"  value="10">
+</div>
+
+<div>
+	<label class="anéis20">ANÉIS DE CEBOLA 20 UND</label>
+	<input type="checkbox" id="anéis20"  value="20">
+</div>
+
+<!-- FORMULARIO-->
+
+<div>
+	<label class="nomecliente">SEU NOME</label>
+	<input type="text" id="nomedoscliente" placeholder=" Informe seu nome" required maxlength="35" minlength="3" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" title="* USAR APENAS LETRAS">
+</div>
+
+<div>
+	<label class="cityent">ESCOLHA SUA CIDADE</label>
+	<select id="cidades" title="Escolha entre Três Coroas ou Igrejinha" required name="cidade">
+		<option value=""></option>
+ 		<option value="Igrejinha">IGREJINHA</option>
+		<option value="três coroas">TRÊS COROAS</option>
+	</select>
+</div>
+
+<div>
+	<label class="endereçocliente">ENDEREÇO</label>
+	<input type="text" id="endereçodocliente" name="endereço" placeholder="Informe sua rua, bairro, número da casa e referência se tiver." title="Um endereço bem informativo, agilizará a entrega." required maxlength="100" minlength="15">
+</div>
+
+<div>
+	<label class="celularcliente">CELULAR</label>
+	<input type="number" id="celulardocliente" name="celular" title="EXEMPLO = 51 988776655" placeholder="(xx) x xxxxxxxx" required pattern="[0-9]" maxlength="12">
+</div>
+
+<div>
+	<input type="submit" id="envpedpor" value="ENVIAR PEDIDO">
+</div>
+
+<div>
+	<input type="reset" id="resetpedpor" value="LIMPAR">
+</div>
+
+</form>
+
+<!--PROVÉRBIO MOTIVACIONAL NO FINAL DA PAGINA-->
+<div>
+	<p class="ditadoporção"><i>" Confie no Senhor de todo o seu coração e não se apoie em seu próprio entendimento; reconheça o Senhor em todos os seus caminhos, e ele endireitará suas veredas. "</i></p>
+	<p id="prov1">Provérbios 3:5-6</p>
+</div>
+
+<!--RODAPÉ DO SITE COM INFORMAÇÕES REFERENTE A TELE DOG E SELOS DE FUNCIONALIDADES-->
+<footer>
+
+	<p class="timefunc">&nbsp;HORARÍO DE FUNCIONAMENTO</p>
+		<ul class="timesfunc">
+			<li >DE SEGUNDA A SEXTA</li>
+			<li>11:00 às 13:00 E  18:00 às 23:00</li>
+		</ul>
+		
+	<p class="localentr">TELE-ENTREGA&nbsp;</p>
+		<ul class="locaisentr">
+			<li>IGREJINHA</li>
+			<li>TRÊS COROAS</li>
+		</ul>
+		
+	<p class="formpay">PAGAMENTOS</p>
+		<ul class="meiopay">
+			<li> DINHEIRO</li>
+			<li><abbr class="abbrcard" title="ACEITAMOS CARTÕES : VISA, MASTERCARD, ELO, HIPERCARD, GOODCARD">CARTÕES</abbr></li>
+		</ul>
+		
+	<p class="dadoscontato" id="dadoscontato">CONTATO</p>
+		<a href=" http://api.whatsapp.com/send?1=pt_BR&phone=5551996403213" target="_blank"><img src="img/whatsapp-icone.png" class="iconwhats" alt="imagem icone do whatsapp"></a>
+		<a href="https://www.facebook.com/teledogigrejinha" target="_blank"><img src="img/facebook-icone.png" class="iconface" alt="imagem icone do facebook"></a>
+		<a href="https://www.instagram.com/tele_dog" target="_blank"><img src="img/instagran-icone.png" class="iconinsta" alt="imagem icone do instagram"></a>
+		<a href="https://www.youtube.com/channel/UC3AIknz26FNrUi4Covgq4WQ" target="_blank"><img src="img/youtube-icone.png" class="iconyoutube" alt="imagem icone do youtube"></a>
+		<a href="mailto:teledogigrejinha@gmail.com" target="_blank"><img src="img/gmail-icon.png" class="icongmail" alt="imagem icone do youtube"></a>
+		<p class="meioscontatoend">Endereço: R. Tiradentes, 77 - Centro,&nbsp; Igrejinha - RS</p>
+		<p class="meioscontatocel">FONE: 9 99512797</p>
+		<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11295.61233121006!2d-50.794818!3d-29.574251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6dd1fc3729c9746!2sTele%20Dog%20Igrejinha%20Lanches%20e%20Petiscos!5e1!3m2!1spt-BR!2sbr!4v1581481524688!5m2!1spt-BR!2sbr" allowfullscreen=""></iframe>
+</footer>
+
+</body>
+</html>
